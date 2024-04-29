@@ -1,13 +1,14 @@
-import java.util.Scanner;
+import java.io.IOException;
+
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         double[] array = {1.0, 2.0, 3.0, 4.0, 5.0};
 
-        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Введите число Shift: ");
-        int shift = scanner.nextInt();
+        int shift = System.in.read();
 
 
         System.out.print("Исходный массив: ");
